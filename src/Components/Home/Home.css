@@ -1,0 +1,12 @@
+.style{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin: 3rem 5rem;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+
