@@ -1,4 +1,15 @@
-.navbar{
-    border-bottom: .1rem solid lightgray;
-    margin-bottom: 2rem;
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
+#border{
+    border-bottom: .1rem solid #999;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+  }

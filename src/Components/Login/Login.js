@@ -101,11 +101,11 @@ const Login = () => {
                             <h3>Create an account</h3>
                             <input onBlur={handleBlur} className="form-control" type="text" name="name" placeholder="Name" required/>
                             <input onBlur={handleBlur} className="form-control my-4" type="email" name="email" placeholder="Username or Email" required/>
-                            <input onBlur={handleBlur} className="form-control my-3" type="password" name="password" placeholder="Password" required/>
-                            {/* <input onBlur={handleBlur} className="form-control my-4" type="password" name="confirmPassword" placeholder="Confirm Password" /> */}
+                            <input onBlur={handleBlur} className="form-control my-3" type="password" name="password" placeholder="Password" required/>                            
                             <input className="form-control bg-warning" type="submit" value="Create An Account"/>
                             {/* <label htmlFor="">Already have an account? <a href="https://facebook.com">Login</a></label> */}
                         </form>
+                        <p className="text-center mt-3 or">or</p>
                     <p className="mt-3 text-danger">{user.err}</p>
                         <button onClick={handleWithGoogle}><FontAwesomeIcon icon={faGoogle} /> Continue with Google</button>
                     </div>

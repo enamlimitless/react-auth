@@ -1,8 +1,8 @@
 import React from 'react';
 import Map from '../Map/Map';
-import './Book.css';
+import './Destination.css';
 
-const Book = () => {
+const Destination = () => {
     return (
         <div>
             <div className="container">
@@ -23,4 +23,4 @@ const Book = () => {
     );
 };
 
-export default Book;
+export default Destination;

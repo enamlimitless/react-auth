@@ -3,16 +3,35 @@
     margin: 0 auto;
     border: .1rem solid lightgray;
     padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: .3rem;
 }
 button{
     border: .1rem solid lightgray;
     width:100%;
     border-radius: 5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: .5rem 1rem;
     background: #fff;
     color: #333;
     font-weight: bold;
+}
+.or{font-size:1.5rem;}
+.or::after{
+    content: "";
+    background: #000;
+    width: 6rem;
+    height: .1rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+.or::before{
+    content: "";
+    background: #000;
+    width: 6rem;
+    height: .1rem;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -6.5rem;
 }
