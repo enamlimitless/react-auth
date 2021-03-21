@@ -41,7 +41,7 @@ const Login = () => {
                 // var credential = res.credential;
                 // var token = credential.accessToken;
                 var user = res.user;
-                console.log(email)
+                console.log(email,loggedInUser,setLoggedInUser,user)
             }).catch((err) => {
                 var errCode = err.code;
                 var errMessage = err.message;

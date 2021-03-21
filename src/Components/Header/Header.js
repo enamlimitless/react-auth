@@ -15,7 +15,7 @@ const Header = (props) => {
     return (
         <div>
             <div className="header">
-                <div onClick={showLogin}>
+                <div className="header-style" onClick={showLogin}>
                     <img src={vehicle} alt=""/>
                     <h2>{name}</h2>
                 </div>

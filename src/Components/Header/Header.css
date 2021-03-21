@@ -1,7 +1,10 @@
 .header{
-    background: #fff;
     margin-top: 5rem;
     border-radius: .4rem;
     cursor: pointer;
 }
-.header img{width:15rem;}
+.header img{
+    width:15rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+}
