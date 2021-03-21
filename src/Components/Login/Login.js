@@ -8,11 +8,13 @@ import firebaseConfig from '../../firebaseConfig';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 
-if (firebase.apps.length === 0) {
-    firebase.initializeApp(firebaseConfig);
-}
+
 
 const Login = () => {
+
+    if (firebase.apps.length === 0) {
+        firebase.initializeApp(firebaseConfig);
+    }
 
     const history = useHistory();
     const location = useLocation();
@@ -36,17 +38,14 @@ const Login = () => {
                 /** @type {firebase.auth.OAuthCredential} */
                 const {displayName, email} = res.user || {};
                 const singInUser = {name: displayName, email}
+                console.log(singInUser.email)
                 setLoggedInUser(singInUser)
                 history.replace(from);
-                // var credential = res.credential;
-                // var token = credential.accessToken;
-                var user = res.user;
                 console.log(email,loggedInUser,setLoggedInUser,user)
             }).catch((err) => {
                 var errCode = err.code;
                 var errMessage = err.message;
                 var email = err.email;
-                // var credential = err.credential;
                 console.log(errCode, errMessage, email)
             });
     }
@@ -79,14 +78,16 @@ const Login = () => {
                     const newUserInfo = {...user}
                     newUserInfo.err = '';
                     console.log(res)
+                    const {displayName, email} = res.user || {};
+                    const userLogin = {name: displayName, email}
+                    setLoggedInUser(userLogin)
+                    console.log(user.email)
+                    history.replace(from);
                 })
                 .catch(err => {
                     const newUserInfo = {...user}
                     newUserInfo.err = err.message
                     setUser(newUserInfo)
-                    // var errCode = err.code;
-                    // var errMessage = err.message;
-                    // console.log(errCode,errMessage)
                 });
         }
         e.preventDefault();

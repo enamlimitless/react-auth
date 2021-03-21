@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  // Link
+  Route
 } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Components/Login/Login';
@@ -18,7 +17,6 @@ export const UserContext = createContext()
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div className="App">
       <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
       <Navbar></Navbar>
       <Router>
@@ -38,7 +36,6 @@ function App() {
         </Switch>
       </Router>
       </UserContext.Provider>
-    </div>
   );
 }
 

@@ -6,8 +6,7 @@ import Header from '../Header/Header';
 const Home = () => {
     const [car, setCar] = useState([]);
     useEffect(() =>{
-        setCar(FakeData); 
-        // console.log(car[0])
+        setCar(FakeData);
     },[])
     console.log(car[0])
     return (

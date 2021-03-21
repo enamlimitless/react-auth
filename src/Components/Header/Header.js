@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import './Header.css';
 const Header = (props) => {
-    console.log(props)
     const {name, vehicle} = props.car || {};
 
     const history = useHistory()
