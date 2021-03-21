@@ -6,6 +6,16 @@
 #border{
     border-bottom: .1rem solid #999;
 }
+.nav-link{
+    color: #000 !important;
+    font-weight: 600;
+    padding: 0 1.5rem !important;
+}
+.username{
+    font-size:1.2rem;
+     font-weight: 700 !important;
+     color: #000 !important;
+    }
 
 @media only screen and (max-width: 600px) {
     .logo {

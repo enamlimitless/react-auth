@@ -25,7 +25,7 @@ const Navbar = () => {
                                 <a className="nav-link" href="/destination">Destination</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="/" >{loggedInUser.name}</a>
+                            <a className="nav-link username" href="/" >{loggedInUser.name}</a>
                             </li>
                         </ul>
                     </div>
