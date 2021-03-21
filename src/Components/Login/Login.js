@@ -3,7 +3,6 @@ import './Login.css';
 import firebase from "firebase/app";
 import "firebase/auth";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import firebaseConfig from '../../firebaseConfig';
 import { UserContext } from '../../App';
@@ -39,15 +38,15 @@ const Login = () => {
                 const singInUser = {name: displayName, email}
                 setLoggedInUser(singInUser)
                 history.replace(from);
-                var credential = res.credential;
-                var token = credential.accessToken;
+                // var credential = res.credential;
+                // var token = credential.accessToken;
                 var user = res.user;
-                console.log(user.email)
+                console.log(email)
             }).catch((err) => {
                 var errCode = err.code;
                 var errMessage = err.message;
                 var email = err.email;
-                var credential = err.credential;
+                // var credential = err.credential;
                 console.log(errCode, errMessage, email)
             });
     }
@@ -99,11 +98,8 @@ const Login = () => {
                 <div className="row">
                     <div className="col-lg-6 wrap">
                         <form onSubmit={handleSubmit}>
-                            {/* <h3>Name:{user.name}</h3>
-                            <h3>Email:{user.email}</h3>
-                            <h3>Password:{user.password}</h3> */}
                             <h3>Create an account</h3>
-                            <input onBlur={handleBlur} className="form-control" type="text" name="name" Placeholder="Name" required/>
+                            <input onBlur={handleBlur} className="form-control" type="text" name="name" placeholder="Name" required/>
                             <input onBlur={handleBlur} className="form-control my-4" type="email" name="email" placeholder="Username or Email" required/>
                             <input onBlur={handleBlur} className="form-control my-3" type="password" name="password" placeholder="Password" required/>
                             {/* <input onBlur={handleBlur} className="form-control my-4" type="password" name="confirmPassword" placeholder="Confirm Password" /> */}

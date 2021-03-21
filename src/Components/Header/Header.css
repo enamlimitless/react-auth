@@ -2,5 +2,6 @@
     background: #fff;
     margin-top: 5rem;
     border-radius: .4rem;
+    cursor: pointer;
 }
 .header img{width:15rem;}
