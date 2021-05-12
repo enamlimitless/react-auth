@@ -12,7 +12,7 @@ Website Link: smoothriders.netlify.app/
    
 
 ### Website Preview
-  https://affectionate-varahamihira-59c5c8.netlify.app
+  smoothriders.netlify.app/
 
 ## Technologies
 ***
