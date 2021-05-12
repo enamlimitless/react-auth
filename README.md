@@ -8,7 +8,7 @@
 ***This is a simple react web app by using react.js and React Router.***
 *It's about a league called Fantasy Football. Where there are different clubs and they have their own information*
 
-Website Link: https://affectionate-varahamihira-59c5c8.netlify.app
+Website Link: smoothriders.netlify.app/
    
 
 ### Website Preview
